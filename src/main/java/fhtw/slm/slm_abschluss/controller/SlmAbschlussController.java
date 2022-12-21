@@ -4,10 +4,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-public class SlmAbschlussApplicationController {
 
   @RestController
-  public class SlmMarkingApiController {
+  public class SlmAbschlussController {
     @GetMapping("api/mark")
     public int calculateGrade (@RequestParam int percentage){
       int returnGrade = 0;
@@ -25,4 +24,4 @@ public class SlmAbschlussApplicationController {
       return returnGrade;
     }
   }
-}
+
